@@ -33,3 +33,36 @@
 	#print(len(spisk))
 #else:
 	#print("goodbye")
+
+spisk1=["GoOd","NICE","best","321","abc123"]
+spisk2=["noice","NotSoNoice"]
+spisk3=[22,11,78,1,2,3]
+print(spisk1)
+print(spisk2)
+print(spisk3)
+while 1:
+	print("Press 1 to add up both lists")
+	print("Press 2 to repeat lists")
+	print("Press 3 to sort the 3rd list")
+	print("Press 4 to exit")
+	dec=int(input("Wanna know stuff about the list?: "))
+	if dec==1:
+		spisk3=spisk1+spisk2
+		print(spisk3)
+	elif dec==2:
+		dec1=int(input("Which list do you want to be repeated? 1 or 2: "))
+		a=int(input("How much times should the programm repeat the list?: "))
+		if dec1==1:
+			spiskC=spisk1*a
+			print(spiskC)
+		elif dec1==2:
+			spiskC=spisk2*a
+			print(spiskC)
+	elif dec==3:
+		spisk3.sort()
+		print(spisk3)
+	elif dec==4:
+		print("goodbye")
+		break
+	else:
+		print("You can press only 1,2,3 or 4")
