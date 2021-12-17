@@ -40,6 +40,13 @@ while 1:
 	print("Press 2 to repeat lists")
 	print("Press 3 to sort the 3rd list")
 	print("Press 4 to know the length of the list")
+	print("Press 5 to split the words")
+	print("Press 6 to make the first letter capital")
+	print("Press 7 to make the whole list not in capital letters")
+	print("Press 8 to make the whole list in capital lettes")
+	print("Press 9 to chech if the words are strating in capital letters")
+	print("Press 10 to fill empty space with a symbol")
+
 	dec=int(input("Wanna know stuff about the list?: "))
 	if dec==1:
 		spisk3=spisk1+spisk2
@@ -57,8 +64,21 @@ while 1:
 		spisk3.sort()
 		print(spisk3)
 	elif dec==4:
-		print(len(spisk))
-	elif dec==5:
-		
+		print(len(spisk1))
+	elif dec == 5:
+		print(slovo.split())
+	elif dec == 6:
+		print(slovo.capitalize()) 
+	elif dec == 7:
+		print(slovo.lower()) 
+	elif dec == 8:
+		print(slovo.upper())
+	elif dec == 9:
+		if slovo.istitle()==True: 
+			print("There is a capital letter")
+		else:
+			print("There is no capital letter")
+	elif dec == 10:
+		print(slovo.ljust(20,"/"))
 	else:
-		print("You can press only 1,2,3 or 4")
+		print("You can press only number from 1-10")
