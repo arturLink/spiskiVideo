@@ -26,14 +26,9 @@
 			#print("no letter")
 	#print (slovo_list)
 
-#spisk=["krasava","lutshii","tigr"]
-#print(spisk)
-#decision=int(input("Do you want to know the length of the list? 1 for Yes, 2 for No: "))
-#if decision==1:
-	#print(len(spisk))
-#else:
-	#print("goodbye")
-
+slovo="exhausted"
+slovo_list=list(slovo)
+print(slovo_list, slovo)
 spisk1=["GoOd","NICE","best","321","abc123"]
 spisk2=["noice","NotSoNoice"]
 spisk3=[22,11,78,1,2,3]
@@ -44,7 +39,7 @@ while 1:
 	print("Press 1 to add up both lists")
 	print("Press 2 to repeat lists")
 	print("Press 3 to sort the 3rd list")
-	print("Press 4 to exit")
+	print("Press 4 to know the length of the list")
 	dec=int(input("Wanna know stuff about the list?: "))
 	if dec==1:
 		spisk3=spisk1+spisk2
@@ -62,7 +57,8 @@ while 1:
 		spisk3.sort()
 		print(spisk3)
 	elif dec==4:
-		print("goodbye")
-		break
+		print(len(spisk))
+	elif dec==5:
+		
 	else:
 		print("You can press only 1,2,3 or 4")
